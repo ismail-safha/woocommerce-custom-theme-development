@@ -1,0 +1,23 @@
+@media (max-width: 900px) {
+  .navHeder {
+    display: none;
+  }
+}
+/**====== Start Products =====*/
+
+@media (max-width: 1024px) {
+  .products .single_product {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .products .single_product {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .products .single_product {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
