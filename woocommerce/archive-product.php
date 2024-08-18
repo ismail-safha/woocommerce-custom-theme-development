@@ -119,4 +119,44 @@ do_action( 'woocommerce_no_products_found' );
 do_action( 'woocommerce_after_main_content' );
 echo '</div>'; // Close banner_shop
 
+?>
+
+<div class="sectionSupport">
+  <div class="container">
+
+
+    <div class="card-support">
+      <div class="cardSection">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/icon/highQuality.svg" alt="highQuality" />
+        <div class="cardSection-content">
+          <h1>High Quality</h1>
+          <p>crafted from top materials</p>
+        </div>
+      </div>
+      <div class="cardSection">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/icon/guarantee.svg" alt="highQuality" />
+        <div class="cardSection-content">
+          <h1>Warranty Protection</h1>
+          <p>Over 2 years</p>
+        </div>
+      </div>
+      <div class="cardSection">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/icon/shipping.svg" alt="highQuality" />
+        <div class="cardSection-content">
+          <h1>Free Shipping</h1>
+          <p>Order over 150 $</p>
+        </div>
+      </div>
+      <div class="cardSection">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/icon/customer-support.svg" alt="highQuality" />
+        <div class="cardSection-content">
+          <h1>24 / 7 Support</h1>
+          <p>Dedicated support</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<?php
+
 get_footer( 'shop' );

@@ -562,6 +562,30 @@ button {
   font-size: calc(var(--pixel) * 10) !important;
 }
 
+/* Footer section Support */
+
+.sectionSupport {
+  background-color: var(--secondary);
+  height: 270px;
+}
+
+.card-support {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  padding: 100px 0;
+}
+.cardSection {
+  display: flex;
+}
+.cardSection-content h1 {
+  font-size: 20px;
+}
+.cardSection-content p {
+  font-size: 15px;
+}
 /* Footer Section */
 .footers {
   margin: calc(var(--pixel) * 70) 0;
