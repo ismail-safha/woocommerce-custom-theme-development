@@ -25,4 +25,11 @@ $(document).ready(function ($) {
     $("#page-overlay").addClass("hidden");
     $("body").removeClass("no-scroll");
   });
+
+  // Toggle mini-sidebar when the filter icon is clicked
+  $("#filter-icon-trigger").on("click", function (e) {
+    e.preventDefault();
+    $("#mini-sidebar").toggleClass("hiddenFilter");
+    $("#mini-width").toggleClass("content-width");
+  });
 });

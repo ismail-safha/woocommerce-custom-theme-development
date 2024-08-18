@@ -23,10 +23,12 @@ echo '</div>';
 echo '<div class="count_sort">';
  echo '<div class="container line_banenr">';
  echo '<div class="count-filter">';
- echo  '<div class="">Filter</div>';
-   echo '<h1 class="woocommerce-result-count">' . woocommerce_result_count() . '</h1>';
-   echo '</div>';
-   echo '<div class="woocommerce-result-count">' . woocommerce_catalog_ordering() . '</div>';
+ echo '<div id="filter-icon-trigger" class="filter-button"><img src="' . esc_url( get_template_directory_uri() ) . '/images/icon/system-uicons_filtering.svg" alt="Filter Icon" /> Filter</div>';
+  // Display the WooCommerce result count
+  woocommerce_result_count();
+  // Display the WooCommerce sorting options
+  echo '</div>';
+  woocommerce_catalog_ordering();
  echo '</div>';
 echo '</div>';
 
@@ -59,13 +61,19 @@ echo '<div class="woocommerce-content">';
 
   // Start Sidebar inside the woocommerce-content div
   if ( is_active_sidebar( 'shop-sidebar' ) ) {
-  echo '<aside class="woocommerce-sidebar">';
+  echo '<aside id="mini-sidebar" class="woocommerce-sidebar hiddenFilter">';
     dynamic_sidebar( 'shop-sidebar' );
     echo '</aside>';
   }
 
   // Start Main content (products)
-  echo '<div class="woocommerce-main-content">';
+  echo '<div id="mini-width" class="woocommerce-main-content content-width">';
+
+  ?>
+<div class="title_section">
+  <h1>Our Products</h1>
+</div>
+<?php
     woocommerce_product_loop_start();
 
     if ( wc_get_loop_prop( 'total' ) ) {

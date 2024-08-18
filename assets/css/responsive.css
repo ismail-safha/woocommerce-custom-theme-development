@@ -5,7 +5,7 @@
 }
 /**====== Start Products =====*/
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .products .single_product {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -20,4 +20,4 @@
   .products .single_product {
     grid-template-columns: repeat(1, 1fr);
   }
-}
+} */
